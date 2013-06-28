@@ -25,7 +25,6 @@ public class BiomeIds {
     public static int BIRCH_MOUNTAINS_DEFAULT = 42;
     public static int DUNES_DEFAULT = 43;
     public static int THICK_SWAMP_DEFAULT = 44;
-    
     public static int LUSH_FOREST_DEFAULT = 45;
     public static int LUSH_SWAMP_DEFAULT = 46;
 
@@ -52,7 +51,6 @@ public class BiomeIds {
     public static int BIRCH_MOUNTAINS;
     public static int DUNES;
     public static int THICK_SWAMP;
-    
     public static int LUSH_FOREST;
     public static int LUSH_SWAMP;
 	
