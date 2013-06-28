@@ -11,7 +11,7 @@ public class BiomeGenLushForest extends BiomeGenBase {
 
 	public BiomeGenLushForest(int id) {
 		super(id);
-		theBiomeDecorator.grassPerChunk = 100;
+		theBiomeDecorator.grassPerChunk = 30;
 		theBiomeDecorator.reedsPerChunk = 10;
 		theBiomeDecorator.treesPerChunk = 10;
 	}
