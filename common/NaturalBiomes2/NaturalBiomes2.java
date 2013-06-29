@@ -38,6 +38,6 @@ public class NaturalBiomes2 {
         
         @PostInit
         public void postInit(FMLPostInitializationEvent event) {
-
+        	ForestryAPIManager.init();
         }
 }
