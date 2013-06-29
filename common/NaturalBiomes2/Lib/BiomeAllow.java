@@ -1,4 +1,4 @@
-package NaturalBiomes2.Lib;
+package naturalbiomes2.Lib;
 
 public class BiomeAllow {
 

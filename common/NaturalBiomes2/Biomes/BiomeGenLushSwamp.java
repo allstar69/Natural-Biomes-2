@@ -1,4 +1,4 @@
-package NaturalBiomes2.Biomes;
+package naturalbiomes2.Biomes;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

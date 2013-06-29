@@ -1,4 +1,4 @@
-package NaturalBiomes2;
+package naturalbiomes2;
 
 import java.util.Random;
 import net.minecraft.block.Block;

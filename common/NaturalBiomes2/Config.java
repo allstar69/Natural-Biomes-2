@@ -1,13 +1,12 @@
-package NaturalBiomes2;
+package naturalbiomes2;
 
 import java.io.File;
 
-import NaturalBiomes2.Lib.BiomeAllow;
-import NaturalBiomes2.Lib.BiomeIds;
-import NaturalBiomes2.Lib.BiomeIds;
-import NaturalBiomes2.Lib.Strings;
-import NaturalBiomes2.Lib.VillageAllow;
 
+import naturalbiomes2.Lib.BiomeAllow;
+import naturalbiomes2.Lib.BiomeIds;
+import naturalbiomes2.Lib.Strings;
+import naturalbiomes2.Lib.VillageAllow;
 import net.minecraftforge.common.Configuration;
 
 public class Config

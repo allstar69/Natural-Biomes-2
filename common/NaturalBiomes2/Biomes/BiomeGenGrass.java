@@ -1,4 +1,4 @@
-package NaturalBiomes2.Biomes;
+package naturalbiomes2.Biomes;
 
 import java.util.Random;
 
