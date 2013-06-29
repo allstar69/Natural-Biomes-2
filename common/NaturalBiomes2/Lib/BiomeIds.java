@@ -1,4 +1,4 @@
-package naturalbiomes2.lib;
+package NaturalBiomes2.Lib;
 
 public class BiomeIds {
 

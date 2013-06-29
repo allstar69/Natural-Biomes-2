@@ -1,6 +1,6 @@
-package naturalbiomes2;
+package NaturalBiomes2;
 
-import naturalbiomes2.biomes.BiomeHandler;
+import NaturalBiomes2.Biomes.BiomeHandler;
 import cpw.mods.fml.common.Loader;
 import forestry.api.core.EnumTemperature;
 import forestry.api.core.EnumHumidity;
