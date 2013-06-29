@@ -1,9 +1,9 @@
-package naturalbiomes2.Biomes;
+package naturalbiomes2.biomes;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import naturalbiomes2.Lib.BiomeAllow;
-import naturalbiomes2.Lib.BiomeIds;
-import naturalbiomes2.Lib.VillageAllow;
+import naturalbiomes2.lib.BiomeAllow;
+import naturalbiomes2.lib.BiomeIds;
+import naturalbiomes2.lib.VillageAllow;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;

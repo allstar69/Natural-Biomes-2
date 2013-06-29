@@ -1,4 +1,4 @@
-package naturalbiomes2.Biomes;
+package naturalbiomes2.biomes;
 
 import net.minecraft.world.biome.BiomeGenBase;
 
