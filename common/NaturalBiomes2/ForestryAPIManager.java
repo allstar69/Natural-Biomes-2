@@ -53,9 +53,6 @@ public class ForestryAPIManager {
 		EnumHumidity.aridBiomeIds.add(BiomeHandler.savannah.biomeID);
 		
 		EnumHumidity.dampBiomeIds.add(BiomeHandler.rainForest.biomeID);
-		EnumHumidity.dampBiomeIds.add(BiomeHandler.lushForest.biomeID);
-		EnumHumidity.dampBiomeIds.add(BiomeHandler.lushMountains.biomeID);
-		EnumHumidity.dampBiomeIds.add(BiomeHandler.lushPlains.biomeID);
 		EnumHumidity.dampBiomeIds.add(BiomeHandler.lushSwamp.biomeID);
 		EnumHumidity.dampBiomeIds.add(BiomeHandler.marsh.biomeID);
 		EnumHumidity.dampBiomeIds.add(BiomeHandler.thickSwamp.biomeID);
@@ -72,6 +69,9 @@ public class ForestryAPIManager {
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.thickOakMountains.biomeID);
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.snowyOakMountains.biomeID);
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.birchMountains.biomeID);
+		EnumHumidity.normalBiomeIds.add(BiomeHandler.lushForest.biomeID);
+		EnumHumidity.normalBiomeIds.add(BiomeHandler.lushMountains.biomeID);
+		EnumHumidity.normalBiomeIds.add(BiomeHandler.lushPlains.biomeID);
 	}
 	
 }
