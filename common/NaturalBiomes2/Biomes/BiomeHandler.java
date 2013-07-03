@@ -89,6 +89,30 @@ public class BiomeHandler {
 	
 	public static void addToBiomeDictionary()
 	{
+		BiomeDictionary.registerBiomeType(rainForest, new BiomeDictionary.Type[] {BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.HILLS});
+		BiomeDictionary.registerBiomeType(birchJungle, new BiomeDictionary.Type[] {BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.HILLS});
+		BiomeDictionary.registerBiomeType(oakWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(thickWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(sparseWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(snowyWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST, BiomeDictionary.Type.FROZEN});
+		BiomeDictionary.registerBiomeType(lushPlains, new BiomeDictionary.Type[] {BiomeDictionary.Type.PLAINS});
+		BiomeDictionary.registerBiomeType(lushMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN});
+		BiomeDictionary.registerBiomeType(pineForest, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(meadows, new BiomeDictionary.Type[] {BiomeDictionary.Type.PLAINS});
+		BiomeDictionary.registerBiomeType(shrublands, new BiomeDictionary.Type[] {BiomeDictionary.Type.PLAINS});
+		BiomeDictionary.registerBiomeType(snowyShrublands, new BiomeDictionary.Type[] {BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.FROZEN});
+		BiomeDictionary.registerBiomeType(marsh, new BiomeDictionary.Type[] {BiomeDictionary.Type.SWAMP});
+		BiomeDictionary.registerBiomeType(savannah, new BiomeDictionary.Type[] {BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.DESERT});
+		BiomeDictionary.registerBiomeType(birchWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(oakMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(thickOakMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(sparseOakMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(snowyOakMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.FROZEN});
+		BiomeDictionary.registerBiomeType(birchMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(dunes, new BiomeDictionary.Type[] {BiomeDictionary.Type.DESERT, BiomeDictionary.Type.MOUNTAIN});
+		BiomeDictionary.registerBiomeType(thickSwamp, new BiomeDictionary.Type[] {BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(lushForest, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
+		BiomeDictionary.registerBiomeType(lushSwamp, new BiomeDictionary.Type[] {BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.FOREST});
 	}
 	
 	public static void addSpawnBiomes()
