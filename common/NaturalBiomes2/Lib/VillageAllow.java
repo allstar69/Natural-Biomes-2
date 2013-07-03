@@ -21,6 +21,7 @@ public class VillageAllow {
     public static boolean LUSH_MOUNTAINS_DEFAULT = true;
     public static boolean LUSH_PLAINS_DEFAULT = true;
     public static boolean LUSH_SWAMP_DEFAULT = true;
+    public static boolean MASSIVE_HILLS_DEFAULT = true;
     public static boolean MARSH_DEFAULT = true;
     public static boolean MEADOWS_DEFAULT = true; 
     public static boolean PINE_FOREST_DEFAULT = true;
@@ -57,6 +58,7 @@ public class VillageAllow {
     public static boolean LUSH_MOUNTAINS;
     public static boolean LUSH_PLAINS;
     public static boolean LUSH_SWAMP;
+    public static boolean MASSIVE_HILLS;
     public static boolean MARSH;
     public static boolean MEADOWS; 
     public static boolean PINE_FOREST;
