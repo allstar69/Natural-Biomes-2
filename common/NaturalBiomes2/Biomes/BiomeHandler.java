@@ -97,7 +97,7 @@ public class BiomeHandler {
         	lushMountains = new BiomeGenGrass(BiomeIds.LUSH_MOUNTAINS).setColor(9286496).setBiomeName("Lush Mountains(NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.5F, 0.9F);
         	lushPlains = new BiomeGenGrass(BiomeIds.LUSH_PLAINS).setColor(9286496).setBiomeName("Lush Plains(NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.1F, 0.2F);
         	lushSwamp = new BiomeGenLushSwamp(BiomeIds.LUSH_SWAMP, 2).setColor(9286496).setBiomeName("Lush Swamps(NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(-0.2F, 0.1F);
-        	massiveHills = new BiomeGenMassiveHills(BiomeIds.MASSIVE_HILLS).setColor(9286496).setBiomeName("Massive Hills(NB2)").setMinMaxHeight(0.9F, 2.0F).setTemperatureRainfall(0.2F, 0.3F);
+        	massiveHills = new BiomeGenMassiveHills(BiomeIds.MASSIVE_HILLS).setColor(9286496).setBiomeName("Massive Hills(NB2)").setMinMaxHeight(1.5F, 2.0F).setTemperatureRainfall(0.2F, 0.3F);
         	marsh = new BiomeGenMarsh(BiomeIds.MARSH).setColor(353825).setBiomeName("Marsh(NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.1F, 0.2F);
         	meadows = new BiomeGenMeadows(BiomeIds.MEADOWS).setColor(9286496).setBiomeName("Meadows(NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.1F, 0.2F);
         	pineForest = new BiomeGenPineForest(BiomeIds.PINE_FOREST).setColor(747097).setBiomeName("Pine Forest(NB2)").setTemperatureRainfall(0.3F, 0.6F).setMinMaxHeight(0.1F, 0.3F);
