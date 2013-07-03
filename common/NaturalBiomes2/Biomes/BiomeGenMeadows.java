@@ -12,11 +12,11 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 
 public class BiomeGenMeadows extends BiomeGenBase {
 
-	public BiomeGenMeadows(int par1, int grassChunk) {
+	public BiomeGenMeadows(int par1) {
 		super(par1);
 		this.theBiomeDecorator.treesPerChunk = 1;
 		this.theBiomeDecorator.flowersPerChunk = 25;
-		this.theBiomeDecorator.grassPerChunk = grassChunk;
+		this.theBiomeDecorator.grassPerChunk = 100;
 		this.spawnableCreatureList.add(new SpawnListEntry(EntitySheep.class, 5, 4, 4));
 	}
 	

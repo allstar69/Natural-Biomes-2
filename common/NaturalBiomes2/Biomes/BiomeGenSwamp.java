@@ -7,12 +7,12 @@ import net.minecraft.world.ColorizerGrass;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-public class BiomeGenThickSwamp extends BiomeGenBase
+public class BiomeGenSwamp extends BiomeGenBase
 {
-    public BiomeGenThickSwamp(int var1)
+    public BiomeGenSwamp(int id, int treesChunk)
     {
-        super(var1);
-        this.theBiomeDecorator.treesPerChunk = 15;
+        super(id);
+        this.theBiomeDecorator.treesPerChunk = treesChunk;
         this.theBiomeDecorator.flowersPerChunk = -999;
         this.theBiomeDecorator.deadBushPerChunk = 1;
         this.theBiomeDecorator.mushroomsPerChunk = 8;
