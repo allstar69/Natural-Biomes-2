@@ -3,6 +3,7 @@ package NaturalBiomes2.Biomes;
 import java.util.Random;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.SpawnListEntry;
@@ -18,6 +19,7 @@ public class BiomeGenMeadows extends BiomeGenBase {
 		this.theBiomeDecorator.flowersPerChunk = 25;
 		this.theBiomeDecorator.grassPerChunk = 100;
 		this.spawnableCreatureList.add(new SpawnListEntry(EntitySheep.class, 5, 4, 4));
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityHorse.class, 5, 2, 6));
 	}
 	
 	public WorldGenerator getRandomWorldGenForTrees(Random par1Random)

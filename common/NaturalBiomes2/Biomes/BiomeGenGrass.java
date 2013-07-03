@@ -3,6 +3,7 @@ package NaturalBiomes2.Biomes;
 import java.util.Random;
 
 import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.SpawnListEntry;
 import net.minecraft.world.gen.feature.WorldGenShrub;
@@ -13,6 +14,7 @@ public class BiomeGenGrass extends BiomeGenBase {
 
 	public BiomeGenGrass(int par1) {
 		super(par1);
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityHorse.class, 5, 2, 6));
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityCow.class, 5, 2, 3));
 		this.theBiomeDecorator.grassPerChunk = 100;
 	}
