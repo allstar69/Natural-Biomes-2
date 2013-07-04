@@ -26,6 +26,11 @@ public class BiomeGenSwamp extends BiomeGenBase
         this.waterColorMultiplier = 14745518;
     }
 
+    public WorldGenerator getRandomWorldGenForTrees(Random par1Random)
+    {
+        return this.worldGeneratorSwamp;
+    }
+    
     @SideOnly(Side.CLIENT)
     public int getBiomeGrassColor()
     {
