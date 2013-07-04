@@ -16,8 +16,7 @@ public class BiomeGenShrublands extends BiomeGenBase {
 
 	public BiomeGenShrublands(int par1) {
 		super(par1);
-		this.theBiomeDecorator.treesPerChunk = 2;
-		this.theBiomeDecorator.grassPerChunk = -100;
+		this.theBiomeDecorator.grassPerChunk = 5;
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityHorse.class, 5, 2, 6));
 	}
 
