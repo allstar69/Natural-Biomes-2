@@ -93,6 +93,6 @@ public class ForestryAPIManager {
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremeMeadowHills.biomeID);
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremeWoods.biomeID);
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremePineHills.biomeID);
-		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremeSnowHills.biomeID):
+		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremeSnowHills.biomeID);
 	}
 }
