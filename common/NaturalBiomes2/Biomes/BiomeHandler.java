@@ -80,10 +80,10 @@ public class BiomeHandler {
 		birchJungle = new BiomeGenBirchJungle(BiomeIds.BIRCH_JUNGLE).setColor(353825).setBiomeName("Birch Jungle (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.4F, 0.7F);
         birchMountains = new BiomeGenBirchWoods(BiomeIds.BIRCH_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Birch Mountains (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.5F, 0.9F);
         birchWoods = new BiomeGenBirchWoods(BiomeIds.BIRCH_WOODS, 3, 3).setColor(353825).setBiomeName("Birch Woods (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.2F, 0.3F);
-        dunes = new BiomeGenDunes(BiomeIds.DUNES).setColor(16421912).setBiomeName("Dunes (NB2)").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.5F, 0.9F);	
+        dunes = new BiomeGenDunes(BiomeIds.DUNES).setDisableRain().setColor(16421912).setBiomeName("Dunes (NB2)").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.5F, 0.9F);	
         extremeBirchWoods = new BiomeGenBirchWoods(BiomeIds.EXTREME_BIRCH_WOODS, 3, 3).setColor(6316128).setBiomeName("Extreme Birch Woods (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.3F, 1.5F);
-    	extremeDesertHills = new BiomeGenDesert(BiomeIds.EXTREME_DESERT_HILLS).setColor(6316128).setBiomeName("Extreme Desert (NB2)").setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.3F, 1.5F);
-    	extremeDunes = new BiomeGenDunes(BiomeIds.EXTREME_DUNES).setColor(6316128).setBiomeName("Extreme Dunes (NB2)").setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.3F, 1.5F);
+    	extremeDesertHills = new BiomeGenDesert(BiomeIds.EXTREME_DESERT_HILLS).setDisableRain().setColor(6316128).setBiomeName("Extreme Desert (NB2)").setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.3F, 1.5F);
+    	extremeDunes = new BiomeGenDunes(BiomeIds.EXTREME_DUNES).setDisableRain().setColor(6316128).setBiomeName("Extreme Dunes (NB2)").setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.3F, 1.5F);
     	extremeForestedHills = new BiomeGenForest(BiomeIds.EXTREME_FORESTED_HILLS, 3).setColor(6316128).setBiomeName("Extreme Forested Hills (NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.3F, 1.5F);
     	extremeGrassHills = new BiomeGenGrass(BiomeIds.EXTREME_GRASS_HILLS).setColor(6316128).setBiomeName("Extreme Grass Hills (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.3F, 1.5F);
     	extremeMeadowHills = new BiomeGenMeadows(BiomeIds.EXTREME_MEADOW_HILLS).setColor(6316128).setBiomeName("Extreme Meadow Hills (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.3F, 1.5F);
