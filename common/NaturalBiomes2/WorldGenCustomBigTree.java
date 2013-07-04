@@ -1,11 +1,11 @@
 package NaturalBiomes2;
 
 import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import net.minecraft.world.gen.feature.WorldGenBigTree;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.ForgeDirection;
 
@@ -17,7 +17,7 @@ public class WorldGenCustomBigTree extends WorldGenerator
 
     World worldObj;
     int[] basePos = new int[] {0, 0, 0};
-    int heightLimit = 0;
+    int heightLimit;
     int height;
     double heightAttenuation = 0.618D;
     double branchDensity = 1.0D;
@@ -33,15 +33,14 @@ public class WorldGenCustomBigTree extends WorldGenerator
 
     int[][] leafNodes;
     
-    int metaWood;
-    
     int metaLeaf;
+    int metaWood;
 
-    public WorldGenCustomBigTree(boolean par1, int par2, int par3)
+    public WorldGenCustomBigTree(boolean par1, int MetaWood, int MetaLeaf)
     {
         super(par1);
-        metaWood = par2;
-        metaLeaf = par3;
+        metaWood = MetaWood;
+        metaLeaf = MetaLeaf;
     }
 
     void generateLeafNodeList()
