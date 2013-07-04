@@ -43,4 +43,5 @@ public class Strings {
 	public static final String EXTREME_SNOW_HILLS = "extremeSnowHills";
 	public static final String EXTREME_SPARSE_WOODS = "extremeSparseWoods";
 	public static final String MASSIVE_HILLS = "massiveHills";
+	public static final String FOREST = "forest";
 }

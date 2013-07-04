@@ -7,6 +7,7 @@ public class BiomeAllow {
     public static boolean BIRCH_MOUNTAINS_DEFAULT = true;
     public static boolean BIRCH_WOODS_DEFAULT = true;
     public static boolean DUNES_DEFAULT = true;
+    public static boolean FOREST_DEFAULT = true;
     public static boolean EXTREME_BIRCH_WOODS_DEFAULT = true;
     public static boolean EXTREME_DESERT_HILLS_DEFAULT = true;
     public static boolean EXTREME_DUNES_DEFAULT = true;
@@ -44,6 +45,7 @@ public class BiomeAllow {
     public static boolean BIRCH_MOUNTAINS;
     public static boolean BIRCH_WOODS;
     public static boolean DUNES;
+    public static boolean FOREST;
     public static boolean EXTREME_BIRCH_WOODS;
     public static boolean EXTREME_DESERT_HILLS;
     public static boolean EXTREME_DUNES;

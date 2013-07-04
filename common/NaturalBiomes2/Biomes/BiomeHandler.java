@@ -26,6 +26,7 @@ public class BiomeHandler {
 	public static BiomeGenBase extremePineHills;
 	public static BiomeGenBase extremeSnowHills;
 	public static BiomeGenBase extremeSparseWoods;
+	public static BiomeGenBase forest;
 	public static BiomeGenBase oakMountains;
 	public static BiomeGenBase oakWoods;
 	public static BiomeGenBase lushForest;
@@ -49,7 +50,6 @@ public class BiomeHandler {
 	public static BiomeGenBase thickWoods;
     
     	//new ones that need to be added
-    	public static BiomeGenBase forest;
     	public static BiomeGenBase snowyForest;
     	public static BiomeGenBase birchForest;
     	public static BiomeGenBase blackMarsh;
@@ -91,7 +91,10 @@ public class BiomeHandler {
     	extremePineHills = new BiomeGenPineForest(BiomeIds.EXTREME_PINE_HILLS).setColor(6316128).setBiomeName("Extreme Pines(NB2)").setTemperatureRainfall(0.3F, 0.6F).setMinMaxHeight(0.3F, 1.5F);
     	extremeSnowHills = new BiomeGenSnow(BiomeIds.EXTREME_SNOW_HILLS).setColor(6316128).setBiomeName("Extreme Snow Hills(NB2)").setTemperatureRainfall(0.0F, 0.05F).setMinMaxHeight(0.3F, 1.5F);
     	extremeSparseWoods = new BiomeGenWoods(BiomeIds.EXTREME_SPARSE_WOODS, 1, 3).setColor(6316128).setBiomeName("Extreme Sparse Woods").setTemperatureRainfall(1.5F, 0.15F).setMinMaxHeight(0.3F, 1.5F);
-        oakMountains = new BiomeGenWoods(BiomeIds.OAK_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Oak Mountains(NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.5F, 0.9F);
+        
+    	forest = new BiomeGenForest(BiomeIds.FOREST, 5).setColor(353825).setBiomeName("Forest(NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.2F, 0.3F);
+        
+    	oakMountains = new BiomeGenWoods(BiomeIds.OAK_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Oak Mountains(NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.5F, 0.9F);
 		oakWoods = new BiomeGenWoods(BiomeIds.OAK_WOODS, 3, 3).setColor(353825).setBiomeName("Woods(NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.2F, 0.3F);
 		lushForest = new BiomeGenForest(BiomeIds.LUSH_FOREST, 30).setColor(9286496).setBiomeName("Lush Forest(NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.2F, 0.3F);
         lushMountains = new BiomeGenGrass(BiomeIds.LUSH_MOUNTAINS).setColor(9286496).setBiomeName("Lush Mountains(NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.5F, 0.9F);
@@ -120,6 +123,7 @@ public class BiomeHandler {
 		BiomeDictionary.registerBiomeType(birchMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(birchWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(dunes, new BiomeDictionary.Type[] {BiomeDictionary.Type.DESERT, BiomeDictionary.Type.MOUNTAIN});
+		BiomeDictionary.registerBiomeType(forest, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(extremeBirchWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN,BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(extremeDesertHills, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.DESERT});
 		BiomeDictionary.registerBiomeType(extremeDunes, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.DESERT});
@@ -159,6 +163,7 @@ public class BiomeHandler {
 		BiomeManager.addSpawnBiome(birchMountains);
 		BiomeManager.addSpawnBiome(birchWoods);
 		BiomeManager.addSpawnBiome(dunes);
+		BiomeManager.addSpawnBiome(forest);
 		BiomeManager.addSpawnBiome(extremeBirchWoods);
 		BiomeManager.addSpawnBiome(extremeDesertHills);
 		BiomeManager.addSpawnBiome(extremeDunes);
@@ -198,6 +203,7 @@ public class BiomeHandler {
 		BiomeManager.addVillageBiome(birchMountains, VillageAllow.BIRCH_MOUNTAINS);
 		BiomeManager.addVillageBiome(birchWoods, VillageAllow.BIRCH_WOODS);
 		BiomeManager.addVillageBiome(dunes, VillageAllow.DUNES);
+		BiomeManager.addVillageBiome(forest, VillageAllow.FOREST);
 		BiomeManager.addVillageBiome(extremeBirchWoods, VillageAllow.EXTREME_BIRCH_WOODS);
 		BiomeManager.addVillageBiome(extremeDesertHills, VillageAllow.EXTREME_DESERT_HILLS);
 		BiomeManager.addVillageBiome(extremeDunes, VillageAllow.EXTREME_DUNES);
@@ -236,6 +242,7 @@ public class BiomeHandler {
 		BiomeManager.addStrongholdBiome(birchMountains);
 		BiomeManager.addStrongholdBiome(birchWoods);
 		BiomeManager.addStrongholdBiome(dunes);
+		BiomeManager.addStrongholdBiome(forest);
 		BiomeManager.addStrongholdBiome(extremeBirchWoods);
 		BiomeManager.addStrongholdBiome(extremeDesertHills);
 		BiomeManager.addStrongholdBiome(extremeDunes);
@@ -282,6 +289,9 @@ public class BiomeHandler {
 			
 		if (BiomeAllow.DUNES)
 			GameRegistry.addBiome(dunes);
+		
+		if (BiomeAllow.FOREST)
+			GameRegistry.addBiome(forest);
 		
 		if (BiomeAllow.EXTREME_BIRCH_WOODS)
 			GameRegistry.addBiome(extremeBirchWoods);
