@@ -17,20 +17,12 @@ public class BiomeGenShrublands extends BiomeGenBase {
 	public BiomeGenShrublands(int par1) {
 		super(par1);
 		this.theBiomeDecorator.treesPerChunk = 2;
-		this.theBiomeDecorator.grassPerChunk = 5;
+		this.theBiomeDecorator.grassPerChunk = -100;
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityHorse.class, 5, 2, 6));
 	}
 
 	public WorldGenerator getRandomWorldGenForTrees(Random par1Random){
 	    return new WorldGenShrub(0, 0);
-	}
-	
-	public WorldGenerator getRandomWorldGenForGrass(Random par1Random){
-		if (par1Random.nextInt(2) == 0){
-			return new WorldGenTallGrass(Block.tallGrass.blockID, 1);
-		}else{
-			return new WorldGenTallGrass(Block.tallGrass.blockID, 2);
-		}
 	}
 	
 }
