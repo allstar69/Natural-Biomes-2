@@ -32,5 +32,15 @@ public class Strings {
 	public static final String THICK_SWAMP_NAME = "thickSwamp";		
 	public static final String LUSH_FOREST_NAME = "lushForest";
 	public static final String LUSH_SWAMP_NAME = "lushSwamp";
-	
+	public static final String EXTREME_BIRCH_WOODS = "extremeBirchWoods";
+	public static final String EXTREME_DESERT_HILLS = "extremeDesert";
+	public static final String EXTREME_DUNES = "extremeDunes";
+	public static final String EXTREME_FORESTED_HILLS = "extremeForestedHills";
+	public static final String EXTREME_GRASS_HILLS = "extremeGrassHills";
+	public static final String EXTREME_MEADOW_HILLS = "extremeMeadowHills";
+	public static final String EXTREME_WOODS = "extremeWoods";
+	public static final String EXTREME_PINE_HILLS = "extremePines";
+	public static final String EXTREME_SNOW_HILLS = "extremeSnowHills";
+	public static final String EXTREME_SPARSE_WOODS = "extremeSparseWoods";
+	public static final String MASSIVE_HILLS = "massiveHills";
 }
