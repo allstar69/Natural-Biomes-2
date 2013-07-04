@@ -30,14 +30,15 @@ public class BiomeIds {
     public static int RAIN_FOREST_DEFAULT = 53;
     public static int SAVANNAH_DEFAULT = 54;
     public static int SHRUBLANDS_DEFAULT = 55;
-    public static int SNOWY_OAK_MOUNTAINS_DEFAULT = 56;
-    public static int SNOWY_SHRUBLANDS_DEFAULT = 57;
-    public static int SNOWY_WOODS_DEFAULT = 58;
-    public static int SPARSE_OAK_MOUNTAINS_DEFAULT = 59;
-    public static int SPARSE_WOODS_DEFAULT = 60;
-    public static int THICK_OAK_MOUNTAINS_DEFAULT = 61;
-    public static int THICK_SWAMP_DEFAULT = 62;
-    public static int THICK_WOODS_DEFAULT = 63;
+    public static int SNOWY_FOREST_DEFAULT = 56;
+    public static int SNOWY_OAK_MOUNTAINS_DEFAULT = 57;
+    public static int SNOWY_SHRUBLANDS_DEFAULT = 58;
+    public static int SNOWY_WOODS_DEFAULT = 59;
+    public static int SPARSE_OAK_MOUNTAINS_DEFAULT = 60;
+    public static int SPARSE_WOODS_DEFAULT = 61;
+    public static int THICK_OAK_MOUNTAINS_DEFAULT = 62;
+    public static int THICK_SWAMP_DEFAULT = 63;
+    public static int THICK_WOODS_DEFAULT = 64;
 
     //Current Biome Ids
     public static int BIRCH_JUNGLE;
@@ -68,6 +69,7 @@ public class BiomeIds {
     public static int RAIN_FOREST;
     public static int SAVANNAH;
     public static int SHRUBLANDS;
+    public static int SNOWY_FOREST;
     public static int SNOWY_OAK_MOUNTAINS;
     public static int SNOWY_SHRUBLANDS;
     public static int SNOWY_WOODS;

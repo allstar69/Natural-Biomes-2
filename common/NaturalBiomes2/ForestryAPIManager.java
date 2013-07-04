@@ -24,6 +24,7 @@ public class ForestryAPIManager {
 		EnumTemperature.coldBiomeIds.add(BiomeHandler.snowyShrublands.biomeID);
 		EnumTemperature.coldBiomeIds.add(BiomeHandler.snowyOakMountains.biomeID);
 		EnumTemperature.coldBiomeIds.add(BiomeHandler.extremeSnowHills.biomeID);
+		EnumTemperature.coldBiomeIds.add(BiomeHandler.snowyForest.biomeID);
 		
 		EnumTemperature.normalBiomeIds.add(BiomeHandler.oakWoods.biomeID);
 		EnumTemperature.normalBiomeIds.add(BiomeHandler.oakMountains.biomeID);
@@ -94,5 +95,6 @@ public class ForestryAPIManager {
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremeWoods.biomeID);
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremePineHills.biomeID);
 		EnumHumidity.normalBiomeIds.add(BiomeHandler.extremeSnowHills.biomeID);
+		EnumHumidity.normalBiomeIds.add(BiomeHandler.snowyForest.biomeID);
 	}
 }

@@ -31,6 +31,7 @@ public class VillageAllow {
     public static boolean RAIN_FOREST_DEFAULT = false;
     public static boolean SAVANNAH_DEFAULT = true;
     public static boolean SHRUBLANDS_DEFAULT = true;
+    public static boolean SNOWY_FOREST_DEFAULT = true;
     public static boolean SNOWY_OAK_MOUNTAINS_DEFAULT = false;
     public static boolean SNOWY_SHRUBLANDS_DEFAULT = false;
     public static boolean SNOWY_WOODS_DEFAULT = true;
@@ -69,6 +70,7 @@ public class VillageAllow {
     public static boolean RAIN_FOREST;
     public static boolean SAVANNAH;
     public static boolean SHRUBLANDS;
+    public static boolean SNOWY_FOREST;
     public static boolean SNOWY_OAK_MOUNTAINS;
     public static boolean SNOWY_SHRUBLANDS;
     public static boolean SNOWY_WOODS;

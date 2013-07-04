@@ -68,6 +68,7 @@ public class Config
         BiomeIds.EXTREME_WOODS = config.get(Strings.CATEGORY_BIOME, Strings.EXTREME_WOODS, BiomeIds.EXTREME_WOODS_DEFAULT).getInt(BiomeIds.EXTREME_WOODS_DEFAULT);
         BiomeIds.EXTREME_MEADOW_HILLS = config.get(Strings.CATEGORY_BIOME, Strings.EXTREME_MEADOW_HILLS, BiomeIds.EXTREME_MEADOW_HILLS_DEFAULT).getInt(BiomeIds.EXTREME_MEADOW_HILLS_DEFAULT);
         BiomeIds.FOREST = config.get(Strings.CATEGORY_BIOME, Strings.FOREST, BiomeIds.FOREST_DEFAULT).getInt(BiomeIds.FOREST_DEFAULT);
+        BiomeIds.SNOWY_FOREST = config.get(Strings.CATEGORY_BIOME, Strings.SNOWY_FOREST, BiomeIds.SNOWY_FOREST_DEFAULT).getInt(BiomeIds.SNOWY_FOREST_DEFAULT);
 	}
 	
 	public static void allowBiomes(){
@@ -107,6 +108,7 @@ public class Config
         BiomeAllow.MASSIVE_HILLS = config.get(Strings.CATEGORY_BIOME_ON, Strings.MASSIVE_HILLS, BiomeAllow.MASSIVE_HILLS_DEFAULT).getBoolean(BiomeAllow.MASSIVE_HILLS_DEFAULT);
         BiomeAllow.EXTREME_WOODS = config.get(Strings.CATEGORY_BIOME_ON, Strings.EXTREME_WOODS, BiomeAllow.EXTREME_WOODS_DEFAULT).getBoolean(BiomeAllow.EXTREME_WOODS_DEFAULT);
         BiomeAllow.FOREST = config.get(Strings.CATEGORY_BIOME_ON, Strings.FOREST, BiomeAllow.FOREST_DEFAULT).getBoolean(BiomeAllow.FOREST_DEFAULT);
+        BiomeAllow.SNOWY_FOREST = config.get(Strings.CATEGORY_BIOME_ON, Strings.SNOWY_FOREST, BiomeAllow.SNOWY_FOREST_DEFAULT).getBoolean(BiomeAllow.SNOWY_FOREST_DEFAULT);
 	}
 	
 	public static void allowVillages(){
@@ -146,5 +148,6 @@ public class Config
         VillageAllow.MASSIVE_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.MASSIVE_HILLS, VillageAllow.MASSIVE_HILLS_DEFAULT).getBoolean(VillageAllow.MASSIVE_HILLS_DEFAULT);
         VillageAllow.EXTREME_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_WOODS, VillageAllow.EXTREME_WOODS_DEFAULT).getBoolean(VillageAllow.EXTREME_WOODS_DEFAULT);
         VillageAllow.FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.FOREST, VillageAllow.FOREST_DEFAULT).getBoolean(VillageAllow.FOREST_DEFAULT);
+        VillageAllow.SNOWY_FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SNOWY_FOREST, VillageAllow.SNOWY_FOREST_DEFAULT).getBoolean(VillageAllow.SNOWY_FOREST_DEFAULT);
 	}
 }
