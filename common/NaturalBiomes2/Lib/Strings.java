@@ -45,4 +45,13 @@ public class Strings {
 	public static final String MASSIVE_HILLS = "massiveHills";
 	public static final String FOREST = "forest";
 	public static final String SNOWY_FOREST = "snowyForest";
+	public static final String BIRCH_FOREST = "birchForest";
+	public static final String BLACK_MARSH = "blackMarsh";
+	public static final String DESERT_MOUNTAINS = "desertMountains";
+	public static final String FOREST_MOUNTAINS = "forestMountains";
+	public static final String EMPTY_PLAINS = "emptyPlains";
+	public static final String TAIGA_MOUNTAINS = "taigaMountains";
+	public static final String SWAMPY_HILLS = "swampyHills";
+	public static final String SNOWY_MOUNTAINS = "snowyMountains";
+	public static final String MINI_JUNGLE = "miniJungle";
 }

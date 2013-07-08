@@ -5,8 +5,6 @@ import java.io.File;
 import NaturalBiomes2.Lib.BiomeAllow;
 import NaturalBiomes2.Lib.BiomeIds;
 import NaturalBiomes2.Lib.Strings;
-import NaturalBiomes2.Lib.VillageAllow;
-
 
 import net.minecraftforge.common.Configuration;
 
@@ -19,8 +17,7 @@ public class Config
 		config = new Configuration(file);
 		
 		biomeIds();
-		allowBiomes();
-		allowVillages();	
+		allowBiomes();	
 		
 		config.save();
 	}
@@ -69,6 +66,15 @@ public class Config
         BiomeIds.EXTREME_MEADOW_HILLS = config.get(Strings.CATEGORY_BIOME, Strings.EXTREME_MEADOW_HILLS, BiomeIds.EXTREME_MEADOW_HILLS_DEFAULT).getInt(BiomeIds.EXTREME_MEADOW_HILLS_DEFAULT);
         BiomeIds.FOREST = config.get(Strings.CATEGORY_BIOME, Strings.FOREST, BiomeIds.FOREST_DEFAULT).getInt(BiomeIds.FOREST_DEFAULT);
         BiomeIds.SNOWY_FOREST = config.get(Strings.CATEGORY_BIOME, Strings.SNOWY_FOREST, BiomeIds.SNOWY_FOREST_DEFAULT).getInt(BiomeIds.SNOWY_FOREST_DEFAULT);
+        BiomeIds.BIRCH_FOREST = config.get(Strings.CATEGORY_BIOME, Strings.BIRCH_FOREST, BiomeIds.BIRCH_FOREST_DEFAULT).getInt(BiomeIds.BIRCH_FOREST_DEFAULT);
+        BiomeIds.BLACK_MARSH = config.get(Strings.CATEGORY_BIOME, Strings.BLACK_MARSH, BiomeIds.BLACK_MARSH_DEFAULT).getInt(BiomeIds.BLACK_MARSH_DEFAULT);
+        BiomeIds.DESERT_MOUNTAINS = config.get(Strings.CATEGORY_BIOME, Strings.DESERT_MOUNTAINS, BiomeIds.DESERT_MOUNTAINS_DEFAULT).getInt(BiomeIds.DESERT_MOUNTAINS_DEFAULT);
+        BiomeIds.FOREST_MOUNTAINS = config.get(Strings.CATEGORY_BIOME, Strings.FOREST_MOUNTAINS, BiomeIds.FOREST_MOUNTAINS_DEFAULT).getInt(BiomeIds.FOREST_MOUNTAINS_DEFAULT);
+        BiomeIds.EMPTY_PLAINS = config.get(Strings.CATEGORY_BIOME, Strings.EMPTY_PLAINS, BiomeIds.EMPTY_PLAINS_DEFAULT).getInt(BiomeIds.EMPTY_PLAINS_DEFAULT);
+        BiomeIds.TAIGA_MOUNTAINS = config.get(Strings.CATEGORY_BIOME, Strings.TAIGA_MOUNTAINS, BiomeIds.TAIGA_MOUNTAINS_DEFAULT).getInt(BiomeIds.TAIGA_MOUNTAINS_DEFAULT);
+        BiomeIds.SWAMPY_HILLS = config.get(Strings.CATEGORY_BIOME, Strings.SWAMPY_HILLS, BiomeIds.SWAMPY_HILLS_DEFAULT).getInt(BiomeIds.SWAMPY_HILLS_DEFAULT);
+        BiomeIds.SNOWY_MOUNTAINS = config.get(Strings.CATEGORY_BIOME, Strings.SNOWY_MOUNTAINS, BiomeIds.SNOWY_MOUNTAINS_DEFAULT).getInt(BiomeIds.SNOWY_MOUNTAINS_DEFAULT);
+        BiomeIds.MINI_JUNGLE = config.get(Strings.CATEGORY_BIOME, Strings.MINI_JUNGLE, BiomeIds.MINI_JUNGLE_DEFAULT).getInt(BiomeIds.MINI_JUNGLE_DEFAULT);
 	}
 	
 	public static void allowBiomes(){
@@ -109,45 +115,14 @@ public class Config
         BiomeAllow.EXTREME_WOODS = config.get(Strings.CATEGORY_BIOME_ON, Strings.EXTREME_WOODS, BiomeAllow.EXTREME_WOODS_DEFAULT).getBoolean(BiomeAllow.EXTREME_WOODS_DEFAULT);
         BiomeAllow.FOREST = config.get(Strings.CATEGORY_BIOME_ON, Strings.FOREST, BiomeAllow.FOREST_DEFAULT).getBoolean(BiomeAllow.FOREST_DEFAULT);
         BiomeAllow.SNOWY_FOREST = config.get(Strings.CATEGORY_BIOME_ON, Strings.SNOWY_FOREST, BiomeAllow.SNOWY_FOREST_DEFAULT).getBoolean(BiomeAllow.SNOWY_FOREST_DEFAULT);
-	}
-	
-	public static void allowVillages(){
-		VillageAllow.RAIN_FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.RAIN_FOREST_NAME, VillageAllow.RAIN_FOREST_DEFAULT).getBoolean(VillageAllow.RAIN_FOREST_DEFAULT);
-		VillageAllow.BIRCH_JUNGLE = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.BIRCH_JUNGLE_NAME, VillageAllow.BIRCH_JUNGLE_DEFAULT).getBoolean(VillageAllow.BIRCH_JUNGLE_DEFAULT);
-		VillageAllow.OAK_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.OAK_WOODS_NAME, VillageAllow.OAK_WOODS_DEFAULT).getBoolean(VillageAllow.OAK_WOODS_DEFAULT);
-		VillageAllow.THICK_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.THICK_WOODS_NAME, VillageAllow.THICK_WOODS_DEFAULT).getBoolean(VillageAllow.THICK_WOODS_DEFAULT);
-		VillageAllow.SPARSE_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SPARSE_WOODS_NAME, VillageAllow.SPARSE_WOODS_DEFAULT).getBoolean(VillageAllow.SPARSE_WOODS_DEFAULT);
-		VillageAllow.SNOWY_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SNOWY_WOODS_NAME, VillageAllow.SNOWY_WOODS_DEFAULT).getBoolean(VillageAllow.SNOWY_WOODS_DEFAULT);
-		VillageAllow.LUSH_PLAINS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.LUSH_PLAINS_NAME, VillageAllow.LUSH_PLAINS_DEFAULT).getBoolean(VillageAllow.LUSH_PLAINS_DEFAULT);
-		VillageAllow.LUSH_MOUNTAINS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.LUSH_MOUNTAINS_NAME, VillageAllow.LUSH_MOUNTAINS_DEFAULT).getBoolean(VillageAllow.LUSH_MOUNTAINS_DEFAULT);
-		VillageAllow.PINE_FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.PINE_FOREST_NAME, VillageAllow.PINE_FOREST_DEFAULT).getBoolean(VillageAllow.PINE_FOREST_DEFAULT);
-		VillageAllow.MEADOWS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.MEADOWS_NAME, VillageAllow.MEADOWS_DEFAULT).getBoolean(VillageAllow.MEADOWS_DEFAULT);
-		VillageAllow.SHRUBLANDS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SHRUBLANDS_NAME, VillageAllow.SHRUBLANDS_DEFAULT).getBoolean(VillageAllow.SHRUBLANDS_DEFAULT);
-		VillageAllow.SNOWY_SHRUBLANDS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SNOWY_SHRUBLANDS_NAME, VillageAllow.SNOWY_SHRUBLANDS_DEFAULT).getBoolean(VillageAllow.SNOWY_SHRUBLANDS_DEFAULT);
-		VillageAllow.MARSH = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.MARSH_NAME, VillageAllow.MARSH_DEFAULT).getBoolean(VillageAllow.MARSH_DEFAULT);
-		VillageAllow.SAVANNAH = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SAVANNAH_NAME, VillageAllow.SAVANNAH_DEFAULT).getBoolean(VillageAllow.SAVANNAH_DEFAULT);
-		VillageAllow.BIRCH_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.BIRCH_WOODS_NAME, VillageAllow.BIRCH_WOODS_DEFAULT).getBoolean(VillageAllow.BIRCH_WOODS_DEFAULT);
-		VillageAllow.OAK_MOUNTAINS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.OAK_MOUNTAINS_NAME, VillageAllow.OAK_MOUNTAINS_DEFAULT).getBoolean(VillageAllow.OAK_MOUNTAINS_DEFAULT);
-		VillageAllow.THICK_OAK_MOUNTAINS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.THICK_OAK_MOUNTAINS_NAME, VillageAllow.THICK_OAK_MOUNTAINS_DEFAULT).getBoolean(VillageAllow.THICK_OAK_MOUNTAINS_DEFAULT);
-		VillageAllow.SPARSE_OAK_MOUNTAINS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SPARSE_OAK_MOUNTAINS_NAME, VillageAllow.SPARSE_OAK_MOUNTAINS_DEFAULT).getBoolean(VillageAllow.SPARSE_OAK_MOUNTAINS_DEFAULT);
-		VillageAllow.SNOWY_OAK_MOUNTAINS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SNOWY_OAK_MOUNTAINS_NAME, VillageAllow.SNOWY_OAK_MOUNTAINS_DEFAULT).getBoolean(VillageAllow.SNOWY_OAK_MOUNTAINS_DEFAULT);
-		VillageAllow.BIRCH_MOUNTAINS_DEFAULT = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.BIRCH_MOUNTAINS_NAME, VillageAllow.BIRCH_MOUNTAINS_DEFAULT).getBoolean(VillageAllow.BIRCH_MOUNTAINS_DEFAULT);
-		VillageAllow.DUNES = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.DUNES_NAME, VillageAllow.DUNES_DEFAULT).getBoolean(VillageAllow.DUNES_DEFAULT);
-		VillageAllow.THICK_SWAMP = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.THICK_SWAMP_NAME, VillageAllow.THICK_SWAMP_DEFAULT).getBoolean(VillageAllow.THICK_SWAMP_DEFAULT);
-		VillageAllow.LUSH_FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.LUSH_FOREST_NAME, VillageAllow.LUSH_FOREST_DEFAULT).getBoolean(VillageAllow.LUSH_FOREST_DEFAULT);
-		VillageAllow.LUSH_SWAMP = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.LUSH_SWAMP_NAME, VillageAllow.LUSH_SWAMP_DEFAULT).getBoolean(VillageAllow.LUSH_SWAMP_DEFAULT);
-		VillageAllow.EXTREME_BIRCH_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_BIRCH_WOODS, VillageAllow.EXTREME_BIRCH_WOODS_DEFAULT).getBoolean(VillageAllow.EXTREME_BIRCH_WOODS_DEFAULT);
-        VillageAllow.EXTREME_DESERT_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_DESERT_HILLS, VillageAllow.EXTREME_DESERT_HILLS_DEFAULT).getBoolean(VillageAllow.EXTREME_DESERT_HILLS_DEFAULT);
-        VillageAllow.EXTREME_DUNES = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_DUNES, VillageAllow.EXTREME_DUNES_DEFAULT).getBoolean(VillageAllow.EXTREME_DUNES_DEFAULT);
-        VillageAllow.EXTREME_FORESTED_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_FORESTED_HILLS, VillageAllow.EXTREME_FORESTED_HILLS_DEFAULT).getBoolean(VillageAllow.EXTREME_FORESTED_HILLS_DEFAULT);
-        VillageAllow.EXTREME_GRASS_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_GRASS_HILLS, VillageAllow.EXTREME_GRASS_HILLS_DEFAULT).getBoolean(VillageAllow.EXTREME_GRASS_HILLS_DEFAULT);
-        VillageAllow.EXTREME_PINE_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_PINE_HILLS, VillageAllow.EXTREME_PINE_HILLS_DEFAULT).getBoolean(VillageAllow.EXTREME_PINE_HILLS_DEFAULT);
-        VillageAllow.EXTREME_SNOW_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_SNOW_HILLS, VillageAllow.EXTREME_SNOW_HILLS_DEFAULT).getBoolean(VillageAllow.EXTREME_SNOW_HILLS_DEFAULT);
-        VillageAllow.EXTREME_SPARSE_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_SPARSE_WOODS, VillageAllow.EXTREME_SPARSE_WOODS_DEFAULT).getBoolean(VillageAllow.EXTREME_SPARSE_WOODS_DEFAULT);
-        VillageAllow.EXTREME_MEADOW_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_MEADOW_HILLS, VillageAllow.EXTREME_MEADOW_HILLS_DEFAULT).getBoolean(VillageAllow.EXTREME_MEADOW_HILLS_DEFAULT);
-        VillageAllow.MASSIVE_HILLS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.MASSIVE_HILLS, VillageAllow.MASSIVE_HILLS_DEFAULT).getBoolean(VillageAllow.MASSIVE_HILLS_DEFAULT);
-        VillageAllow.EXTREME_WOODS = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.EXTREME_WOODS, VillageAllow.EXTREME_WOODS_DEFAULT).getBoolean(VillageAllow.EXTREME_WOODS_DEFAULT);
-        VillageAllow.FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.FOREST, VillageAllow.FOREST_DEFAULT).getBoolean(VillageAllow.FOREST_DEFAULT);
-        VillageAllow.SNOWY_FOREST = config.get(Strings.CATEGORY_VILLAGE_ON, Strings.SNOWY_FOREST, VillageAllow.SNOWY_FOREST_DEFAULT).getBoolean(VillageAllow.SNOWY_FOREST_DEFAULT);
+        BiomeAllow.BIRCH_FOREST = config.get(Strings.CATEGORY_BIOME_ON, Strings.BIRCH_FOREST, BiomeAllow.BIRCH_FOREST_DEFAULT).getBoolean(BiomeAllow.BIRCH_FOREST_DEFAULT);
+        BiomeAllow.BLACK_MARSH = config.get(Strings.CATEGORY_BIOME_ON, Strings.BLACK_MARSH, BiomeAllow.BLACK_MARSH_DEFAULT).getBoolean(BiomeAllow.BLACK_MARSH_DEFAULT);
+        BiomeAllow.DESERT_MOUNTAINS = config.get(Strings.CATEGORY_BIOME_ON, Strings.DESERT_MOUNTAINS, BiomeAllow.DESERT_MOUNTAINS_DEFAULT).getBoolean(BiomeAllow.DESERT_MOUNTAINS_DEFAULT);
+        BiomeAllow.FOREST_MOUNTAINS = config.get(Strings.CATEGORY_BIOME_ON, Strings.FOREST_MOUNTAINS, BiomeAllow.FOREST_MOUNTAINS_DEFAULT).getBoolean(BiomeAllow.FOREST_MOUNTAINS_DEFAULT);
+        BiomeAllow.EMPTY_PLAINS = config.get(Strings.CATEGORY_BIOME_ON, Strings.EMPTY_PLAINS, BiomeAllow.EMPTY_PLAINS_DEFAULT).getBoolean(BiomeAllow.EMPTY_PLAINS_DEFAULT);
+        BiomeAllow.TAIGA_MOUNTAINS = config.get(Strings.CATEGORY_BIOME_ON, Strings.TAIGA_MOUNTAINS, BiomeAllow.TAIGA_MOUNTAINS_DEFAULT).getBoolean(BiomeAllow.TAIGA_MOUNTAINS_DEFAULT);
+        BiomeAllow.SWAMPY_HILLS = config.get(Strings.CATEGORY_BIOME_ON, Strings.SWAMPY_HILLS, BiomeAllow.SWAMPY_HILLS_DEFAULT).getBoolean(BiomeAllow.SWAMPY_HILLS_DEFAULT);
+        BiomeAllow.SNOWY_MOUNTAINS = config.get(Strings.CATEGORY_BIOME_ON, Strings.SNOWY_MOUNTAINS, BiomeAllow.SNOWY_MOUNTAINS_DEFAULT).getBoolean(BiomeAllow.SNOWY_MOUNTAINS_DEFAULT);
+        BiomeAllow.MINI_JUNGLE = config.get(Strings.CATEGORY_BIOME_ON, Strings.MINI_JUNGLE, BiomeAllow.MINI_JUNGLE_DEFAULT).getBoolean(BiomeAllow.MINI_JUNGLE_DEFAULT);
 	}
 }
