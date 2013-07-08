@@ -15,7 +15,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="NaturalBiomes2", name="Natural Biomes 2", version="0.5")
+@Mod(modid="NaturalBiomes2", name="Natural Biomes 2", version="0.5.1")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class NaturalBiomes2 {
 

@@ -24,9 +24,9 @@ public class BiomeGenMiniJungle extends BiomeGenBase {
 	
 	public WorldGenerator getRandomWorldGenForTrees(Random par1Random){
 		if (par1Random.nextInt(5) == 0){
-			return new WorldGenShrub(2, 2);
+			return new WorldGenShrub(3, 3);
 		}else{
-			return new WorldGenHugeTrees(false, 14 + par1Random.nextInt(4), 3, 3);
+			return new WorldGenHugeTrees(false, 10 + par1Random.nextInt(4), 3, 3);
 		}
 	}
 }
