@@ -16,7 +16,7 @@ public class BiomeGenGrass extends BiomeGenBase {
 		super(par1);
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityHorse.class, 5, 2, 6));
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityCow.class, 5, 2, 3));
-		this.theBiomeDecorator.grassPerChunk = 100;
+		this.theBiomeDecorator.grassPerChunk = 15;
 	}
 	
 	public WorldGenerator getRandomGenForTrees(Random par1Random){

@@ -17,7 +17,7 @@ public class BiomeGenMeadows extends BiomeGenBase {
 		super(par1);
 		this.theBiomeDecorator.treesPerChunk = 1;
 		this.theBiomeDecorator.flowersPerChunk = 25;
-		this.theBiomeDecorator.grassPerChunk = 100;
+		this.theBiomeDecorator.grassPerChunk = 15;
 		this.spawnableCreatureList.add(new SpawnListEntry(EntitySheep.class, 5, 4, 4));
 		this.spawnableCreatureList.add(new SpawnListEntry(EntityHorse.class, 5, 2, 6));
 	}

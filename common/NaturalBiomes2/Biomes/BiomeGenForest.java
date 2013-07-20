@@ -18,7 +18,7 @@ public class BiomeGenForest extends BiomeGenBase {
 	
 	public WorldGenerator getRandomWorldGenForTrees(Random par1Random)
     {
-        if (par1Random.nextInt(5) == 0)
+        if (par1Random.nextInt(8) == 0)
         {
         	return new WorldGenShrub(0, 0);
         }

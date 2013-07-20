@@ -23,6 +23,7 @@ public class BiomeGenLushSwamp extends BiomeGenBase
         this.theBiomeDecorator.clayPerChunk = 1;
         this.theBiomeDecorator.waterlilyPerChunk = 4;
         this.theBiomeDecorator.bigMushroomsPerChunk = 1;
+        this.theBiomeDecorator.grassPerChunk = 15;
     }
     
     public WorldGenerator getRandomWorldGenForTrees(Random par1Random)

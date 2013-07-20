@@ -62,28 +62,28 @@ public class BiomeHandler {
 	
 	public static void init()
 	{
-        	initBiomes();
+        initBiomes();
         
-        	addToBiomeDictionary();
+        addToBiomeDictionary();
 
-        	addSpawnBiomes();
+        addSpawnBiomes();
         
-        	addVillageBiomes();
+        addVillageBiomes();
         
-        	addStrongholdBiomes();
+        addStrongholdBiomes();
 
-        	registerBiomes();
+        registerBiomes();
 	}
 	
 	public static void initBiomes()
 	{
 		birchForest = new BiomeGenBirchForest(BiomeIds.BIRCH_FOREST).setColor(353825).setBiomeName("Birch Forest (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.2F, 0.3F);
 		birchJungle = new BiomeGenBirchJungle(BiomeIds.BIRCH_JUNGLE).setColor(353825).setBiomeName("Birch Jungle (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.4F, 0.7F);
-        birchMountains = new BiomeGenBirchWoods(BiomeIds.BIRCH_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Birch Mountains (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.5F, 0.9F);
+        birchMountains = new BiomeGenBirchWoods(BiomeIds.BIRCH_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Birch Mountains (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.65F, 0.95F);
         birchWoods = new BiomeGenBirchWoods(BiomeIds.BIRCH_WOODS, 3, 3).setColor(353825).setBiomeName("Birch Woods (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.2F, 0.3F);
         blackMarsh = new BiomeGenBlackMarsh(BiomeIds.BLACK_MARSH).setColor(522674).setBiomeName("Black Marsh (NB2)").setTemperatureRainfall(0.8F, 0.9F).setMinMaxHeight(0.1F, 0.2F);
-        dunes = new BiomeGenDunes(BiomeIds.DUNES).setDisableRain().setColor(16421912).setBiomeName("Dunes (NB2)").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.5F, 0.9F);	
-        desertMountains = new BiomeGenDesert(BiomeIds.DESERT_MOUNTAINS).setDisableRain().setColor(16421912).setBiomeName("Desert Mountains (NB2)").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.5F, 0.9F);
+        dunes = new BiomeGenDunes(BiomeIds.DUNES).setDisableRain().setColor(16421912).setBiomeName("Dunes (NB2)").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.65F, 0.95F);	
+        desertMountains = new BiomeGenDesert(BiomeIds.DESERT_MOUNTAINS).setDisableRain().setColor(16421912).setBiomeName("Desert Mountains (NB2)").setDisableRain().setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.65F, 0.95F);
         emptyPlains = new BiomeGenPlain(BiomeIds.EMPTY_PLAINS).setColor(6316128).setBiomeName("Empty Plains (NB2)").setTemperatureRainfall(0.2F, 0.3F).setMinMaxHeight(0.1F, 0.2F);
         extremeBirchWoods = new BiomeGenBirchWoods(BiomeIds.EXTREME_BIRCH_WOODS, 3, 3).setColor(6316128).setBiomeName("Extreme Birch Woods (NB2)").setTemperatureRainfall(0.4F, 0.9F).setMinMaxHeight(0.3F, 1.5F);
     	extremeDesertHills = new BiomeGenDesert(BiomeIds.EXTREME_DESERT_HILLS).setDisableRain().setColor(6316128).setBiomeName("Extreme Desert (NB2)").setTemperatureRainfall(2.0F, 0.0F).setMinMaxHeight(0.3F, 1.5F);
@@ -96,31 +96,31 @@ public class BiomeHandler {
     	extremeSnowHills = new BiomeGenSnow(BiomeIds.EXTREME_SNOW_HILLS).setColor(6316128).setBiomeName("Extreme Snow Hills (NB2)").setTemperatureRainfall(0.0F, 0.05F).setMinMaxHeight(0.3F, 1.5F);
     	extremeSparseWoods = new BiomeGenWoods(BiomeIds.EXTREME_SPARSE_WOODS, 1, 3).setColor(6316128).setBiomeName("Extreme Sparse Woods (NB2)").setTemperatureRainfall(1.5F, 0.15F).setMinMaxHeight(0.3F, 1.5F);
     	forest = new BiomeGenForest(BiomeIds.FOREST, 5).setColor(353825).setBiomeName("Forest (NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.2F, 0.3F);
-    	forestMountains = new BiomeGenForest(BiomeIds.FOREST_MOUNTAINS, 5).setColor(353825).setBiomeName("Forest Mountains (NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.5F, 0.9F);
-    	oakMountains = new BiomeGenWoods(BiomeIds.OAK_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Oak Mountains (NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.5F, 0.9F);
+    	forestMountains = new BiomeGenForest(BiomeIds.FOREST_MOUNTAINS, 5).setColor(353825).setBiomeName("Forest Mountains (NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.65F, 0.95F);
+    	oakMountains = new BiomeGenWoods(BiomeIds.OAK_MOUNTAINS, 3, 3).setColor(353825).setBiomeName("Oak Mountains (NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.65F, 0.95F);
 		oakWoods = new BiomeGenWoods(BiomeIds.OAK_WOODS, 3, 3).setColor(353825).setBiomeName("Woods (NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.2F, 0.3F);
-		lushForest = new BiomeGenForest(BiomeIds.LUSH_FOREST, 30).setColor(9286496).setBiomeName("Lush Forest (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.2F, 0.3F);
-        lushMountains = new BiomeGenGrass(BiomeIds.LUSH_MOUNTAINS).setColor(9286496).setBiomeName("Lush Mountains (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.5F, 0.9F);
+		lushForest = new BiomeGenForest(BiomeIds.LUSH_FOREST, 15).setColor(9286496).setBiomeName("Lush Forest (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.2F, 0.3F);
+        lushMountains = new BiomeGenGrass(BiomeIds.LUSH_MOUNTAINS).setColor(9286496).setBiomeName("Lush Mountains (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.65F, 0.95F);
         lushPlains = new BiomeGenGrass(BiomeIds.LUSH_PLAINS).setColor(9286496).setBiomeName("Lush Plains (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.1F, 0.2F);
         lushSwamp = new BiomeGenLushSwamp(BiomeIds.LUSH_SWAMP, 2).setColor(9286496).setBiomeName("Lush Swamps (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(-0.2F, 0.1F);
         massiveHills = new BiomeGenMassiveHills(BiomeIds.MASSIVE_HILLS).setColor(9286496).setBiomeName("Massive Hills (NB2)").setMinMaxHeight(1.5F, 2.0F).setTemperatureRainfall(0.2F, 0.3F);
         marsh = new BiomeGenMarsh(BiomeIds.MARSH).setColor(353825).setBiomeName("Marsh (NB2)").setTemperatureRainfall(0.7F, 0.8F).setMinMaxHeight(0.1F, 0.2F);
         meadows = new BiomeGenMeadows(BiomeIds.MEADOWS).setColor(9286496).setBiomeName("Meadows (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(0.1F, 0.2F);
         miniJungle = new BiomeGenMiniJungle(BiomeIds.MINI_JUNGLE).setColor(5470985).setBiomeName("Mini Jungle (NB2)").func_76733_a(5470985).setTemperatureRainfall(1.2F, 0.9F).setMinMaxHeight(0.1F, 0.2F);
-        pineForest = new BiomeGenPineForest(BiomeIds.PINE_FOREST).setColor(747097).setBiomeName("Pine Forest (NB2)").setTemperatureRainfall(0.3F, 0.6F).setMinMaxHeight(0.1F, 0.3F);
+        pineForest = new BiomeGenPineForest(BiomeIds.PINE_FOREST).setColor(747097).setBiomeName("Pineforest (NB2)").setTemperatureRainfall(0.3F, 0.6F).setMinMaxHeight(0.1F, 0.3F);
         rainForest = new BiomeGenRainForest(BiomeIds.RAIN_FOREST).setColor(5470985).setBiomeName("Rainforest (NB2)").setTemperatureRainfall(1.2F, 0.9F).setMinMaxHeight(0.4F, 0.8f);
         savannah = new BiomeGenGrass(BiomeIds.SAVANNAH).setColor(353825).setBiomeName("Savannah (NB2)").setTemperatureRainfall(1.9F, 0.15F).setDisableRain().setMinMaxHeight(0.1F, 0.2F);
         shrublands = new BiomeGenShrublands(BiomeIds.SHRUBLANDS).setColor(353825).setBiomeName("Shrublands (NB2)").setTemperatureRainfall(1.5F, 0.15F).setMinMaxHeight(0.1F, 0.5F);       
         snowyForest = new BiomeGenForest(BiomeIds.SNOWY_FOREST, 3).setColor(747097).setBiomeName("Snowy Forest (NB2)").setTemperatureRainfall(0.05F, 0.6F).setEnableSnow().setMinMaxHeight(0.1F, 0.3F);
-        snowyMountains = new BiomeGenSnow(BiomeIds.SNOWY_MOUNTAINS).setColor(747097).setBiomeName("Snowy Mountains (NB2)").setTemperatureRainfall(0.05F, 0.6F).setEnableSnow().setMinMaxHeight(0.5F, 0.9F);
-        snowyOakMountains = new BiomeGenWoods(BiomeIds.SNOWY_OAK_MOUNTAINS, 3, 3).setColor(747097).setBiomeName("Snowy Oak Mountains (NB2)").setTemperatureRainfall(0.05F, 0.6F).setMinMaxHeight(0.5F, 0.9F);
+        snowyMountains = new BiomeGenSnow(BiomeIds.SNOWY_MOUNTAINS).setColor(747097).setBiomeName("Snowy Mountains (NB2)").setTemperatureRainfall(0.05F, 0.6F).setEnableSnow().setMinMaxHeight(0.65F, 0.95F);
+        snowyOakMountains = new BiomeGenWoods(BiomeIds.SNOWY_OAK_MOUNTAINS, 3, 3).setColor(747097).setBiomeName("Snowy Oak Mountains (NB2)").setTemperatureRainfall(0.05F, 0.6F).setMinMaxHeight(0.65F, 0.95F);
         snowyShrublands = new BiomeGenShrublands(BiomeIds.SNOWY_SHRUBLANDS).setColor(9286496).setBiomeName("Snowy Shrublands (NB2)").setTemperatureRainfall(0.05F, 0.6F).setEnableSnow().setMinMaxHeight(0.1F, 0.5F);            
         snowyWoods = new BiomeGenWoods(BiomeIds.SNOWY_WOODS, 3, 3).setColor(747097).setBiomeName("Snowy Woods (NB2)").setTemperatureRainfall(0.05F, 0.6F).setEnableSnow().setMinMaxHeight(0.1F, 0.3F);
-        sparseOakMountains = new BiomeGenWoods(BiomeIds.SPARSE_OAK_MOUNTAINS, 1, 3).setColor(353825).setBiomeName("Sparse Oak Mountains (NB2)").setTemperatureRainfall(1.5F, 0.15F).setMinMaxHeight(0.5F, 0.9F);
+        sparseOakMountains = new BiomeGenWoods(BiomeIds.SPARSE_OAK_MOUNTAINS, 1, 3).setColor(353825).setBiomeName("Sparse Oak Mountains (NB2)").setTemperatureRainfall(1.5F, 0.15F).setMinMaxHeight(0.65F, 0.95F);
         sparseWoods = new BiomeGenWoods(BiomeIds.SPARSE_WOODS, 1, 3).setColor(353825).setBiomeName("Sparse Woods (NB2)").setTemperatureRainfall(1.5F, 0.15F).setMinMaxHeight(0.1F, 0.3F);
         swampyHills = new BiomeGenSwamp(BiomeIds.SWAMPY_HILLS, 5).setColor(522674).setBiomeName("Swampy Hills (NB2)").func_76733_a(9154376).setMinMaxHeight(0.5F, 0.9F).setTemperatureRainfall(0.8F, 0.9F); 
-        taigaMountains = new BiomeGenTaiga(BiomeIds.TAIGA_MOUNTAINS).setColor(747097).setBiomeName("Taiga Mountains (NB2)").setTemperatureRainfall(0.05F, 0.6F).setMinMaxHeight(0.5F, 0.9F);
-        thickOakMountains = new BiomeGenWoods(BiomeIds.THICK_OAK_MOUNTAINS, 12, 3).setColor(353825).setBiomeName("Thick Oak Mountains (NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.5F, 0.9F);
+        taigaMountains = new BiomeGenTaiga(BiomeIds.TAIGA_MOUNTAINS).setColor(747097).setBiomeName("Taiga Mountains (NB2)").setTemperatureRainfall(0.05F, 0.6F).setMinMaxHeight(0.65F, 0.95F);
+        thickOakMountains = new BiomeGenWoods(BiomeIds.THICK_OAK_MOUNTAINS, 12, 3).setColor(353825).setBiomeName("Thick Oak Mountains (NB2)").setTemperatureRainfall(0.6F, 0.4F).setMinMaxHeight(0.65F, 0.95F);
         thickSwamp = new BiomeGenSwamp(BiomeIds.THICK_SWAMP, 15).setColor(522674).setBiomeName("Thick Swampland (NB2)").func_76733_a(9154376).setMinMaxHeight(-0.2F, 0.1F).setTemperatureRainfall(0.8F, 0.9F);    
         thickWoods = new BiomeGenWoods(BiomeIds.THICK_WOODS, 12, 5).setColor(353825).setBiomeName("Thick Woods (NB2)").setTemperatureRainfall(0.8F, 0.9F).setMinMaxHeight(0.1F, 0.3F);
 	}
