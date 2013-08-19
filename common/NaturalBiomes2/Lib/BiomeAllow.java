@@ -42,6 +42,7 @@ public class BiomeAllow {
     public static boolean SNOWY_OAK_MOUNTAINS_DEFAULT = true;
     public static boolean SNOWY_SHRUBLANDS_DEFAULT = true;
     public static boolean SNOWY_WOODS_DEFAULT = true;
+	public static boolean SPARSE_JUNGLE_DEFAULT = true;
     public static boolean SPARSE_OAK_MOUNTAINS_DEFAULT = true;
     public static boolean SPARSE_WOODS_DEFAULT = true;
     public static boolean SWAMPY_HILLS_DEFAULT = true;
@@ -90,6 +91,7 @@ public class BiomeAllow {
     public static boolean SNOWY_OAK_MOUNTAINS;
     public static boolean SNOWY_SHRUBLANDS;
     public static boolean SNOWY_WOODS;
+	public static boolean SPARSE_JUNGLE;
     public static boolean SPARSE_OAK_MOUNTAINS;
     public static boolean SPARSE_WOODS;
     public static boolean SWAMPY_HILLS;

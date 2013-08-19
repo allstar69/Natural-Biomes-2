@@ -41,6 +41,9 @@ public class BiomeIds {
     public static int SNOWY_OAK_MOUNTAINS_DEFAULT = 63;
     public static int SNOWY_SHRUBLANDS_DEFAULT = 64;
     public static int SNOWY_WOODS_DEFAULT = 65;
+    
+    public static int SPARSE_JUNGLE_DEFAULT = 91;
+    
     public static int SPARSE_OAK_MOUNTAINS_DEFAULT = 66;
     public static int SPARSE_WOODS_DEFAULT = 67;
     public static int SWAMPY_HILLS_DEFAULT = 68;
@@ -89,6 +92,7 @@ public class BiomeIds {
     public static int SNOWY_OAK_MOUNTAINS;
     public static int SNOWY_SHRUBLANDS;
     public static int SNOWY_WOODS;
+    public static int SPARSE_JUNGLE;
     public static int SPARSE_OAK_MOUNTAINS;
     public static int SPARSE_WOODS;
     public static int SWAMPY_HILLS;
