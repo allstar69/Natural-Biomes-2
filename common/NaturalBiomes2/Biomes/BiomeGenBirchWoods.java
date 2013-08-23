@@ -7,7 +7,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.SpawnListEntry;
 import net.minecraft.world.gen.feature.WorldGenTrees;
 import net.minecraft.world.gen.feature.WorldGenerator;
-import NaturalBiomes2.WorldGenCustomBigTree;
+import NaturalBiomes2.World.WorldGenCustomBigTree;
 
 public class BiomeGenBirchWoods extends BiomeGenBase {
 

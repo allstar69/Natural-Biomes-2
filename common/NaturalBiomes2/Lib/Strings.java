@@ -55,4 +55,6 @@ public class Strings {
 	public static final String SNOWY_MOUNTAINS = "snowyMountains";
 	public static final String MINI_JUNGLE = "miniJungle";
 	public static final String SPARSE_JUNGLE = "sparseJungle";
+	public static final String SWAMPY_JUNGLE = "swampyJungle";
+
 }

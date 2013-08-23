@@ -16,7 +16,7 @@ import net.minecraft.world.gen.feature.WorldGenVines;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
 public class BiomeGenJungle extends BiomeGenBase {
-
+	
 	public BiomeGenJungle(int id, int treesChunk, int grassChunk, int flowersChunk)
 	{
 		super(id);

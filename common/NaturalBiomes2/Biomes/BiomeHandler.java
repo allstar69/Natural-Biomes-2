@@ -18,7 +18,8 @@ public class BiomeHandler {
 	private static final BiomeHeights BiomeHeight_Normal = new BiomeHeights(0.1F, 0.3F);
 	private static final BiomeHeights BiomeHeight_Flat = new BiomeHeights(0.1F, 0.2F);
 	private static final BiomeHeights BiomeHeight_Massive = new BiomeHeights(1.5F, 2.0F);
-	private static final BiomeHeights BiomeHeight_Swamp = new BiomeHeights(-0.2f, 0.1f);
+	private static final BiomeHeights BiomeHeight_Swamp = new BiomeHeights(-0.2F, 0.1F);
+	private static final BiomeHeights BiomeHeight_DeepSwamp = new BiomeHeights(-0.3F, 0.0F);
 	
 	//Biomes
 	public static BiomeGenBase birchForest;
@@ -80,6 +81,7 @@ public class BiomeHandler {
 	public static BiomeGenBase mountainousIslands;
 	public static BiomeGenBase sparsePineforest;
 	public static BiomeGenBase sparseTaiga;
+	
 	public static BiomeGenBase swampyJungle;
 	public static BiomeGenBase swampyMiniJungle;
 	public static BiomeGenBase swampyWoods;
@@ -158,6 +160,9 @@ public class BiomeHandler {
         //swamp-type biomes
         lushSwamp = new BiomeGenLushSwamp(BiomeIds.LUSH_SWAMP, 2).setColor(9286496).setBiomeName("Lush Swamps (NB2)").setTemperatureRainfall(1.2F, 1.0F).setMinMaxHeight(BiomeHeight_Swamp.Min, BiomeHeight_Swamp.Max);
         thickSwamp = new BiomeGenSwamp(BiomeIds.THICK_SWAMP, 15).setColor(522674).setBiomeName("Thick Swampland (NB2)").func_76733_a(9154376).setTemperatureRainfall(0.8F, 0.9F).setMinMaxHeight(BiomeHeight_Swamp.Min, BiomeHeight_Swamp.Max);    
+	
+        //deep-swamp-type biomes
+        swampyJungle = new BiomeGenSwampyJungle(BiomeIds.SWAMPY_JUNGLE).setColor(522674).setBiomeName("Swampy Jungle").func_76733_a(9154376).setTemperatureRainfall(0.8F, 0.9F).setMinMaxHeight(BiomeHeight_DeepSwamp.Min, BiomeHeight_DeepSwamp.Max);
 	}
 	
 	private static void addToBiomeDictionary()
@@ -204,6 +209,9 @@ public class BiomeHandler {
 		BiomeDictionary.registerBiomeType(sparseOakMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(sparseWoods, new BiomeDictionary.Type[] {BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(swampyHills, new BiomeDictionary.Type[] {BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.HILLS});
+		
+		BiomeDictionary.registerBiomeType(swampyJungle, new BiomeDictionary.Type[] {BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.JUNGLE});
+
 		BiomeDictionary.registerBiomeType(taigaMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.FROZEN});
 		BiomeDictionary.registerBiomeType(thickOakMountains, new BiomeDictionary.Type[] {BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.FOREST});
 		BiomeDictionary.registerBiomeType(thickSwamp, new BiomeDictionary.Type[] {BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.FOREST});
@@ -255,6 +263,9 @@ public class BiomeHandler {
 		BiomeManager.addSpawnBiome(sparseOakMountains);
 		BiomeManager.addSpawnBiome(sparseWoods);
 		BiomeManager.addSpawnBiome(swampyHills);
+		
+		BiomeManager.addSpawnBiome(swampyJungle);
+		
 		BiomeManager.addSpawnBiome(taigaMountains);
 		BiomeManager.addSpawnBiome(thickOakMountains);
 		BiomeManager.addSpawnBiome(thickSwamp);
@@ -322,6 +333,9 @@ public class BiomeHandler {
 		BiomeManager.addStrongholdBiome(sparseOakMountains);
 		BiomeManager.addStrongholdBiome(sparseWoods);
 		BiomeManager.addStrongholdBiome(swampyHills);
+		
+		BiomeManager.addStrongholdBiome(swampyJungle);
+		
 		BiomeManager.addStrongholdBiome(taigaMountains);
 		BiomeManager.addStrongholdBiome(thickOakMountains);
 		BiomeManager.addStrongholdBiome(thickSwamp);
@@ -458,6 +472,9 @@ public class BiomeHandler {
 			
 		if (BiomeAllow.SWAMPY_HILLS)
 			GameRegistry.addBiome(swampyHills);
+		
+		if (BiomeAllow.SWAMPY_JUNGLE)
+			GameRegistry.addBiome(swampyJungle);
 		
 		if (BiomeAllow.TAIGA_MOUNTAINS)
 			GameRegistry.addBiome(taigaMountains);

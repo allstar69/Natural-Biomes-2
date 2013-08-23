@@ -20,7 +20,6 @@ public class BiomeGenBlackMarsh extends BiomeGenBase {
 	public BiomeGenBlackMarsh(int id) {
 		super(id);
 		this.theBiomeDecorator.treesPerChunk = 6;
-		this.theBiomeDecorator.treesPerChunk = 6;
 		this.theBiomeDecorator.flowersPerChunk = -999;
 		this.theBiomeDecorator.deadBushPerChunk = 1;
 		this.theBiomeDecorator.mushroomsPerChunk = 8;

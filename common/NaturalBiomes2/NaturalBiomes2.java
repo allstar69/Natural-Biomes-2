@@ -1,7 +1,8 @@
 package NaturalBiomes2;
 
-import NaturalBiomes2.Config;
 import NaturalBiomes2.Biomes.BiomeHandler;
+import NaturalBiomes2.Util.Config;
+import NaturalBiomes2.Util.ForestryAPIManager;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Init;

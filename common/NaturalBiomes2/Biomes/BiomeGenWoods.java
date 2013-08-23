@@ -2,9 +2,7 @@ package NaturalBiomes2.Biomes;
 
 import java.util.Random;
 
-import NaturalBiomes2.WorldGenCustomBigTree;
-
-
+import NaturalBiomes2.World.WorldGenCustomBigTree;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.SpawnListEntry;
